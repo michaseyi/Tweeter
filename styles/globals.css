@@ -1,26 +1,99 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@layer base {
+	body {
+		@apply bg-background;
+	}
 }
 
-* {
-  box-sizing: border-box;
+@layer components {
+	.explore_nav {
+		@apply after:w-0 after:h-1 after:rounded-t-lg after:bottom-0 after:absolute after:mx-auto after:left-[10%] after:bg-secondary relative  flex-1 py-3 text-sm font-noto font-medium text-primary;
+		@apply active:bg-background md:hover:bg-background select-none rounded-lg;
+	}
+
+	.active_explore_nav {
+		@apply after:w-[80%] text-secondary font-semibold;
+	}
+	.nav_link {
+		@apply relative  font-medium text-primary before:w-0 cursor-pointer before:h-[3px] md:before:h-1  before:bg-secondary text-sm before:absolute before:bottom-0 before:left-0 px-3  py-4  md:py-6 h-full before:rounded-t-lg before:transition-all;
+	}
+
+	.nav_link .shade {
+		@apply w-full h-[70%] absolute top-2 left-0 bg-background  rounded-lg -z-10 hidden;
+	}
+	.active_nav {
+		@apply font-semibold text-secondary before:w-full;
+	}
+
+	.tweets_nav {
+		@apply px-5  before:w-1 py-3 before:h-0 before:bg-secondary before:absolute before:top-0 relative before:left-0 before:rounded-r text-primary font-poppins font-semibold text-sm before:transition-all;
+	}
+	.active_tweets_nav {
+		@apply before:h-full text-secondary;
+	}
+
+	.post_action_button {
+		@apply text-text flex-1 text-sm active:bg-background md:hover:bg-background px-2 flex items-center justify-center active:rounded-lg md:hover:rounded-lg py-3 gap-x-2;
+	}
+	.post_action_button span {
+		@apply md:inline hidden font-noto text-sm;
+	}
+	.setting_dropdown_item {
+		@apply select-none md:cursor-pointer flex items-center gap-x-1 p-2 rounded-lg active:bg-background md:hover:bg-background;
+	}
+
+	.setting_dropdown_active {
+		@apply bg-background;
+	}
+
+	.auth_input_container {
+		@apply relative text-text;
+	}
+
+	.auth_input {
+		@apply w-full bg-transparent focus:border-secondary text-black outline-none border-2 rounded-md py-2 pl-10 font-noto text-[15px];
+	}
+	.auth_input_icon {
+		@apply absolute left-3 h-full text-primary;
+	}
+
+	.social_login {
+		@apply border-[1px]  border-primary rounded-full inline-flex items-center justify-center w-8 h-8 transition-colors;
+		@apply active:bg-primary active:text-white cursor-pointer;
+	}
+
+	.social_login > * {
+		@apply w-4 h-4;
+	}
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@media (max-width: 768px) {
+	.nav_container {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 0 1rem;
+	}
+
+	.nav_link {
+		text-align: center;
+		flex: 1;
+		cursor: default;
+		user-select: none;
+	}
+
+	.nav_link:active .shade {
+		display: block;
+	}
 }
