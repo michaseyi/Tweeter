@@ -27,7 +27,7 @@ export const Nav = () => {
 							<div className={`nav_link ${path == "/explore" ? "active_nav" : ""}`}>
 								<span className="shade"></span>
 								<span className="md:block hidden">Explore</span>
-								<ExploreIcon className=" md:hidden" />
+								<ExploreIcon className="md:!hidden" />
 							</div>
 						</a>
 					</Link>
@@ -39,7 +39,7 @@ export const Nav = () => {
 							<div className={`nav_link ${path == "/bookmark" ? "active_nav" : ""}`}>
 								<span className="shade"></span>
 								<span className="md:block hidden">Bookmark</span>
-								<BookmarkIcon className="md:hidden" />
+								<BookmarkIcon className="md:!hidden" />
 							</div>
 						</a>
 					</Link>
@@ -50,7 +50,7 @@ export const Nav = () => {
 							<div className={`nav_link ${path == "/messages" ? "active_nav" : ""}`}>
 								<span className="shade"></span>
 								<span className="md:block hidden">Chats</span>
-								<ChatRoundedIcon className="md:hidden" />
+								<ChatRoundedIcon className="md:!hidden" />
 							</div>
 						</a>
 					</Link>
