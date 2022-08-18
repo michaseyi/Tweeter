@@ -53,7 +53,7 @@ const Login = () => {
 					</span>
 				</div>
 				<p className="text-center text-sm text-primary">
-					Don't have an account yet?
+					Do not have an account yet?
 					<Link href={"/register"}>
 						<a className="text-secondary font-medium"> Register</a>
 					</Link>
