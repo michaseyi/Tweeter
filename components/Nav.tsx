@@ -16,7 +16,7 @@ export const Nav = () => {
 							<div className={`nav_link ${path == "/home" ? "active_nav" : ""}`}>
 								<span className="shade"></span>
 								<span className="md:block hidden ">Home</span>
-								<HomeIcon className=" md:hidden" />
+								<HomeIcon className=" md:!hidden" />
 							</div>
 						</a>
 					</Link>
