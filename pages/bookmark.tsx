@@ -6,6 +6,7 @@ const Bookmark = () => {
 		<PageContainer>
 			<Head>
 				<title>Bookmark / Tweeter</title>
+				
 			</Head>
 			<Header name={"michaseyi-k"} />
 			<Feeds user={["Tweets", "Tweets & replies", "Media", "Likes"]} />

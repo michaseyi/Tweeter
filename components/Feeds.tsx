@@ -8,7 +8,7 @@ import { TweetSomething } from "./TweetSomething"
 export const Feeds = ({ user, explore, home }: { user?: string[]; explore?: boolean; home?: boolean }) => {
 	return (
 		<div className="px-4 py-5">
-			<div className="container max-w-5xl mx-auto gap-4 flex flex-col md:flex-row md:items-start ">
+			<div className="container max-w-6xl mx-auto gap-4 flex flex-col md:flex-row md:items-start ">
 				{/* Stats */}
 
 				{user ? (

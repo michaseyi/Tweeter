@@ -1,0 +1,15 @@
+{
+	"short_name": "Tweeter",
+	"name": "Tweeter",
+	"icons": [
+		{
+			"src": "/images/tweeter-small.svg",
+			"type": "image/svg",
+			"sizes": "1024*1024"
+		}
+	],
+	"start_url": "/home",
+	"display": "standalone",
+	"theme_color": "#ffffff",
+	"background_color": "#ffffff"
+}

@@ -23,7 +23,13 @@ export const TweetSomething = () => {
 				<div className="xl:pl-12 flex gap-x-2 items-center text-button font-noto text-[12px]">
 					<div className="w-5 h-5 relative">
 						<InsertPhotoOutlinedIcon className="w-5 h-5" />
-						<input className="left-0 w-full opacity-0 absolute" type="file" name="pictures" multiple />
+						<input
+							className="left-0 w-full opacity-0 absolute"
+							type="file"
+							accept="image/png, image/jpeg"
+							name="pictures"
+							multiple
+						/>
 					</div>
 					<div tabIndex={0} className="group h-5 flex relative items-center gap-x-2">
 						<PublicOutlinedIcon className="w-5 h-5" />

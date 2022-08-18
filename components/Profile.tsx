@@ -4,7 +4,7 @@ import { Button } from "./Button"
 export const Profile = () => {
 	return (
 		<div className="px-4 z-10 relative">
-			<div className="md:-mt-12 -mt-6 container max-w-5xl mx-auto px-5  py-4 md:pb-9 md:pt-5 shadow-sm rounded-lg flex flex-col items-center md:items-start md:flex-row gap-x-8 gap-y-4 bg-white">
+			<div className="md:-mt-12 -mt-6 container max-w-6xl mx-auto px-5  py-4 md:pb-9 md:pt-5 shadow-sm rounded-lg flex flex-col items-center md:items-start md:flex-row gap-x-8 gap-y-4 bg-white">
 				<div className="md:-mt-20  -mt-20 w-36 h-36 md:w-40 md:h-40 p-1 bg-white rounded-full">
 					<img className="w-full h-full object-cover rounded-full" src="images/profile.jpeg" alt="profile photo" />
 				</div>

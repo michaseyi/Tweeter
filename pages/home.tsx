@@ -2,6 +2,7 @@ import Head from "next/head"
 import { Feeds, Header, PageContainer } from "../components"
 
 const Home = () => {
+
 	return (
 		<PageContainer>
 			<Head>
