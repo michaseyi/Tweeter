@@ -52,6 +52,7 @@ const Login = () => {
 						<GitHubIcon />
 					</span>
 				</div>
+				
 				<p className="text-center text-sm text-primary">
 					Do not have an account yet?
 					<Link href={"/register"}>
