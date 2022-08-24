@@ -22,7 +22,7 @@ export const TweetSomething = () => {
 				</div>
 				<div className="xl:pl-12 flex gap-x-2 items-center text-button font-noto text-[12px]">
 					<div className="w-5 h-5 relative">
-						<InsertPhotoOutlinedIcon className="w-5 h-5" />
+						<InsertPhotoOutlinedIcon className="!w-5 !h-5" />
 						<input
 							className="left-0 w-full opacity-0 absolute"
 							type="file"
