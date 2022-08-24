@@ -66,7 +66,7 @@ export const Post = ({ image }: { image?: boolean }) => {
 						className="font-noto  text-sm text-black/80  text-placeholder:font-noto placeholder:font-medium placeholder:text-sm  w-full py-2 pl-3 pr-8 outline-none border-2 border-background bg-[#fafafa] rounded-lg"
 						type="text"
 					/>
-					<ImageOutlinedIcon className="absolute right-3 top-0 h-full w-5 text-[#bdbdbd]" />
+					<ImageOutlinedIcon className="!absolute !right-3 !top-0 !h-full !w-5 text-[#bdbdbd]" />
 				</form>
 			</div>
 			{/* comments */}
