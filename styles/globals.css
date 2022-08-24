@@ -64,7 +64,7 @@ input:-webkit-autofill:active {
 		@apply w-full bg-transparent focus:border-secondary text-black outline-none border-2 rounded-md py-2 pl-10 font-noto text-[15px];
 	}
 	.auth_input_icon {
-		@apply absolute left-3 h-full text-primary;
+		@apply !absolute !left-3 !h-full text-primary;
 	}
 
 	.social_login {

@@ -32,19 +32,19 @@ export const TweetSomething = () => {
 						/>
 					</div>
 					<div tabIndex={0} className="group h-5 flex relative items-center gap-x-2">
-						<PublicOutlinedIcon className="w-5 h-5" />
-						<span className="flex-1 font-medium">Everyone can reply</span>
+						<PublicOutlinedIcon className="!w-5 !h-5" />
+						<span className="flex-1 font-medium self-end">Everyone can reply</span>
 						{/** Tweet visibility option */}
 						<span className="absolute left-0 top-[calc(100%+30px)] hidden group-focus:block w-max min-w-[240px] md:min-w-[240px] bg-white rounded-lg shadow-sm p-3 z-10 border-[1px]">
 							<h4 className="font-poppins font-semibold text-[12px] text-text">Who can reply?</h4>
 							<p className="font-noto font-normal text-[12px] text-primary pb-2">Choose who can reply to this Tweet.</p>
 							<ul className="font-noto text-[12px] font-medium text-text space-y-2">
 								<li className="setting_dropdown_item setting_dropdown_active">
-									<PublicOutlinedIcon className="w-5" />
+									<PublicOutlinedIcon className="!w-5" />
 									Everyone
 								</li>
 								<li className="setting_dropdown_item">
-									<PeopleRoundedIcon className="w-5" />
+									<PeopleRoundedIcon className="!w-5" />
 									People you follow
 								</li>
 							</ul>
