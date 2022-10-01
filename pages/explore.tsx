@@ -23,7 +23,7 @@ const Explore = () => {
 			window.addEventListener("scroll", onScrollHandler)
 		}
 		return () => window.removeEventListener("scroll", onScrollHandler)
-	}, [windowWidth])
+	}, [windowWidth, onScrollHandler])
 
 	return (
 		<PageContainer>

@@ -18,7 +18,7 @@ export const Header = ({ name, topValue }: { name: string; topValue?: number }) 
 				topValue ? (topValue > 0 ? "-top-[62px]" : "top-0") : "top-0"
 			} z-30 shadow-md after:w-full after:h-full after:absolute after:top-0 after:left-0  after:-z-10 after:backdrop-blur-lg after:bg-white/60 transition-all`}
 		>
-			<div className="  container mx-auto flex  justify-between items-center">
+			<div className="container mx-auto flex  justify-between items-center">
 				<div className="flex items-center gap-x-2 py-3">
 					<img className="w-10 text-lg md:hidden" src="images/tweeter-small.svg" alt="profile pic" />
 					<img className="h-7 text-lg hidden  md:block " src="images/tweeter.svg" alt="profile pic" />

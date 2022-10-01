@@ -4,6 +4,7 @@ import LoopIcon from "@mui/icons-material/Loop"
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder"
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder"
 import { useRouter } from "next/router"
+import Link from "next/link"
 export const Post = ({ image }: { image?: boolean }) => {
 
 	const router = useRouter()
@@ -11,13 +12,19 @@ export const Post = ({ image }: { image?: boolean }) => {
 	return (
 		<div className="bg-white shadow-sm rounded-lg p-4">
 			{/* first */}
-			<div className="flex w-max items-center gap-x-4 select-none" onClick={() => router.push("/some_person")}>
-				<img className="w-11 h-11 object-cover rounded-full" src="images/profile.jpeg" alt="profile pic" />
-				<div className="flex flex-col gap-y-0.5">
-					<h3 className="font-poppins font-medium text-[16px] leading-5">Some Person</h3>
-					<span className="font-noto font-medium text-[12px] text-text_2">24 August at 20:43</span>
-				</div>
-			</div>
+      
+     <Link href={"/some_person"}> 
+         <a>
+            <div className="flex w-max items-center gap-x-4 select-none">
+               <img className="w-11 h-11 object-cover rounded-full" src="images/profile.jpeg" alt="profile pic" />
+               <div className="flex flex-col gap-y-0.5">
+                  <h3 className="font-poppins font-medium text-[16px] leading-5">Some Person</h3>
+                  <span className="font-noto font-medium text-[12px] text-text_2">24 August at 20:43</span>
+               </div>
+            </div>
+         </a>
+     </Link>
+
 			{/* second */}
 			<p className="pt-4 pb-4 font-noto font-normal text-[16px]  text-text">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sed.
